@@ -38,7 +38,6 @@ jobs:
            pip3 install -U -r requirements.txt
 
        - name: Get config
-         timeout-minutes: 350
          continue-on-error: true
          run: |
            git clone https://${{ secrets.GH_NAME }}:${{ secrets.GH_TOKEN }}@github.com/${{ secrets.GH_NAME }}/${{ secrets.PR }} PR
