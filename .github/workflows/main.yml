@@ -44,7 +44,7 @@ jobs:
            cp PR/.env bot/.env
 
        - name: Run the bot
-         timeout-mimutes: 350
+         timeout-minutes: 350
          continue-on-error: true
          run: |
            cd bot
